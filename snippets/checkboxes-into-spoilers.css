@@ -1,0 +1,31 @@
+.checkboxes-into-spoilers.markdown-preview-view ul.contains-task-list {
+    margin: 0;
+    padding: 0;
+}
+
+.checkboxes-into-spoilers.markdown-preview-view ul.contains-task-list > li.task-list-item {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    background: black;
+    text-indent: 0;
+}
+
+.checkboxes-into-spoilers.markdown-preview-view ul.contains-task-list > li.task-list-item.is-checked {
+    text-decoration: none;
+    color: var(--text-normal);
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.checkboxes-into-spoilers.markdown-preview-view ul.contains-task-list > li.task-list-item > * {
+    position: absolute;
+}
+
+.checkboxes-into-spoilers.markdown-preview-view ul.contains-task-list > li.task-list-item > input.task-list-item-checkbox {
+    z-index: 2;
+    height: 100%;
+    top: -3px;
+    width: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
