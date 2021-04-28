@@ -9,15 +9,19 @@ Plugins, templates, css snippets and more for obsidian.md
 
 Add `snippets/checkboxes-into-spoilers.css` to your `<vault folder>/.obsidian/snippets/` folder.
 
-Adding `cssclass: checkboxes-into-spoilers` into your yaml frontmatter changes the preview mode markdown checkboxes in that note into spoiler tags a'la Discord's `||spoiler||`. Spoilers have to be separated by a different block inbetween.
+Adding `cssclass: checkboxes-into-spoilers` into your yaml frontmatter changes the preview mode markdown checkboxes in that note into spoiler tags a'la Discord's `||spoiler||`. Spoilers have to be separated by a different block inbetween. See screenshot below.
+
+![screenshot](./obsidian_spoiler.png)
 
 #### `language-todo.css`
 
-Changes code blocks with the language `todo` into bright yellow todo blocks that match my personal settings for them in ReSharper.
+Changes code blocks with the language `todo` into bright yellow todo blocks that match my personal settings for them in ReSharper. See screenshot below.
+
+![screenshot](./obsidian_todo.png)
 
 ### UI / Content theming
 
-The following CSS snippets are intended to modify the basic obsidian theme - see screenshot below.
+The following CSS snippets are intended to modify the basic obsidian theme. See screenshot below.
 
 ![screenshot](./obsidian_looks.png)
 
