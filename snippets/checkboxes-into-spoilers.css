@@ -21,8 +21,18 @@
     position: absolute;
 }
 
+.checkboxes-into-spoilers.markdown-preview-view ul.contains-task-list > li.task-list-item > a {
+    position: relative;
+    color: black;
+}
+
+.checkboxes-into-spoilers.markdown-preview-view ul.contains-task-list > li.task-list-item.is-checked > a {
+    position: relative;
+    color: var(--text-accent);
+}
+
 .checkboxes-into-spoilers.markdown-preview-view ul.contains-task-list > li.task-list-item > input.task-list-item-checkbox {
-    z-index: 2;
+    z-index: 4;
     height: 100%;
     top: -3px;
     width: 100%;
