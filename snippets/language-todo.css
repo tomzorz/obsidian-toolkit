@@ -1,0 +1,21 @@
+pre.language-todo {
+    background-color: #ffff00 !important;
+    border-radius: 0 !important;
+    display: inline !important;
+    margin: 6px !important;
+    padding: 3px 6px !important;
+}
+
+pre.language-todo code.language-todo {
+    color: black !important;
+    display: inline !important;
+}
+
+pre.language-todo code.language-todo::before {
+    content: '// TODO ';
+}
+
+pre.language-todo button
+{
+    display: none !important;
+}
