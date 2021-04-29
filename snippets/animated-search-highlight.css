@@ -1,0 +1,16 @@
+.markdown-preview-view .search-highlight div.is-active, .markdown-source-view span.obsidian-search-match-highlight {
+    background: linear-gradient(90deg, var(--text-highlight-bg) 0%, var(--text-highlight-bg) 40%, var(--text-on-accent) 50%, var(--text-highlight-bg) 60%, var(--text-highlight-bg) 100%);
+    animation: slide 5s infinite;
+    animation-timing-function: linear;
+    background-size: 200px 100%;
+}
+
+
+@keyframes slide {
+    0% {
+        background-position: 0% 0;
+    }
+    100%{
+        background-position: 400px 0;
+    }
+}
