@@ -19,6 +19,12 @@ Changes code blocks with the language `todo` into bright yellow todo blocks that
 
 ![screenshot](./obsidian_todo.png)
 
+#### `animated-search-highlight.css`
+
+Changes search result highlight backgrounds into an animated one, a'la iOS's slide to unlock effect (except on the background and not on the text). See screenshot below.
+
+![screenshot](./obsidian_search.png)
+
 ### UI / Content theming
 
 The following CSS snippets are intended to modify the basic obsidian theme. See screenshot below.
