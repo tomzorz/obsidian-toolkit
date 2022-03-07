@@ -1,71 +1,151 @@
+/* font family override */
+
+.markdown-preview-view {
+    font-family: 'Grandview', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+}
+
+.markdown-source-view {
+    font-family: 'Grandview', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+}
+
+.markdown-source-view.mod-cm6 .cm-scroller {
+    font-family: 'Grandview', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+}
+
+/* .markdown-source-view .cm-header {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Microsoft YaHei Light", sans-serif;
+} */
+
 /* headers */
+
+.markdown-source-view.mod-cm6 .cm-scroller .cm-header {
+    font-family: "Futura Md BT", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.4em;
+}
 
 .markdown-preview-view h1, .markdown-preview-view h2, .markdown-preview-view h3, .markdown-preview-view h4 {
     font-family: "Futura Md BT", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-}  
-
-.markdown-preview-view h1 {
-    font-size: 38px;
-    line-height: 47px;
+    line-height: 1.4em;
 }
 
-.markdown-preview-view h2 {
-    font-size: 30px;
-    line-height: 37px;
+.markdown-preview-view h1, .markdown-source-view.mod-cm6 .cm-scroller .cm-header-1 {
+    font-size: 2.4em;
 }
 
-.markdown-preview-view h3 {
-    font-size: 26px;
-    line-height: 33px;
+.markdown-preview-view h2, .markdown-source-view.mod-cm6 .cm-scroller .cm-header-2 {
+    font-size: 2.0em;
 }
 
-.markdown-preview-view h4 {
-    font-size: 22px;
-    line-height: 27px;
+.markdown-preview-view h3, .markdown-source-view.mod-cm6 .cm-scroller .cm-header-3 {
+    font-size: 1.6em;
+}
+
+.markdown-preview-view h4, .markdown-source-view.mod-cm6 .cm-scroller .cm-header-4 {
+    font-size: 1.2em;
+}
+
+@media only screen and (min-width: 2280px) {
+    /* apply 1.2x multiplier to 2560 width */
+
+    .markdown-preview-view {
+        font-size: 1.2em;
+    }
+
+    .markdown-source-view {
+        font-size: 1.2em;
+    }
 }
 
 /* code blocks */
 
-.markdown-preview-view pre code[class*="language-"] {
+.markdown-preview-view pre code[class*="language-"], .markdown-source-view.mod-cm6 .cm-scroller .cm-hmd-codeblock {
     font-family: Consolas, "Source Code Pro", "Courier New", Courier, monospace;
     color: rgb(218, 218, 218);
 }
 
-.markdown-preview-view pre code[class*="language-"] .token.keyword {
+.markdown-preview-view pre code[class*="language-"] .token.keyword, .markdown-source-view.mod-cm6 .cm-scroller .cm-hmd-codeblock.cm-keyword {
     color: rgb(86, 153, 190);
 }
 
-.markdown-preview-view pre code[class*="language-"] .token.operator {
+.markdown-preview-view pre code[class*="language-"] .token.operator, .markdown-source-view.mod-cm6 .cm-scroller .cm-hmd-codeblock.cm-operator {
     color: rgb(180, 180, 180);
 }
 
-.markdown-preview-view pre code[class*="language-"] .token.function {
+.markdown-preview-view pre code[class*="language-"] .token.function, .markdown-source-view.mod-cm6 .cm-scroller .cm-hmd-codeblock.cm-function {
     color: rgb(218, 218, 218);
 }
 
-.markdown-preview-view pre code[class*="language-"] .token.string {
+.markdown-preview-view pre code[class*="language-"] .token.string, .markdown-source-view.mod-cm6 .cm-scroller .cm-hmd-codeblock.cm-string {
     color: rgb(214, 157, 133);
 }
 
-.markdown-preview-view pre code[class*="language-"] .token.comment {
+.markdown-preview-view pre code[class*="language-"] .token.comment, .markdown-source-view.mod-cm6 .cm-scroller .cm-hmd-codeblock.cm-comment {
     color: rgb(87, 166, 74);
 }
 
-.markdown-preview-view pre code[class*="language-"] .token.class-name {
+.markdown-preview-view pre code[class*="language-"] .token.class-name, .markdown-source-view.mod-cm6 .cm-scroller .cm-hmd-codeblock.cm-class-name {
     color: rgb(78, 201, 176);
 }
 
-.markdown-preview-view p code {
+.markdown-preview-view code, .markdown-source-view.mod-cm6 .cm-scroller .cm-inline-code {
     font-family: Consolas, "Source Code Pro", "Courier New", Courier, monospace;
     color: cyan;
-    font-size: 16px;
+}
+
+.markdown-preview-view p code, .markdown-source-view.mod-cm6 .cm-scroller .cm-inline-code {
+    font-size: 1em;
 }
 
 /* highlights */
 
-.markdown-preview-view mark {
+.markdown-preview-view mark, .markdown-source-view.mod-cm6 .cm-scroller .cm-highlight {
     --text-highlight-bg: #ffff00;
     --text-normal: #000000;
     padding: 2px;
     font-weight: 600;
-  }
+}
+
+/* non-existent links */
+
+.markdown-preview-view a.internal-link.is-unresolved, .markdown-source-view.mod-cm6 .cm-scroller .is-unresolved .cm-hmd-internal-link {
+    text-decoration: none;
+    opacity: 1.0;
+}
+
+.markdown-preview-view a.internal-link.is-unresolved::after, .markdown-source-view.mod-cm6 .cm-scroller .is-unresolved .cm-hmd-internal-link::after {
+    vertical-align: super;
+    content: '💢';
+    font-size: 0.7em;
+}
+
+/* quotes */
+
+.markdown-preview-view blockquote {
+    box-shadow: 0 3.2px 7.2px 0 rgba(0,0,0,.132),0 .6px 1.8px 0 rgba(0,0,0,.108);
+    padding: 20px 30px;
+    color: white;
+    border: 2px solid var(--mica-border);
+    border-left: 4px solid var(--text-muted);
+    margin: 30px 0;
+    position: relative;
+    background: linear-gradient(175deg, transparent, rgba(255,255,255,0.05));
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.8em;
+    display: block;
+}
+
+.markdown-source-view.mod-cm6 .cm-scroller .HyperMD-quote {
+    padding: 20px 30px;
+    /* border: 2px solid var(--mica-border); */
+    border-left: 4px solid var(--text-muted);
+    margin: 30px 0;
+    position: relative;
+    /* background: linear-gradient(175deg, transparent, rgba(255,255,255,0.05)); */
+    background-color: rgba(255,255,255,0.05);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.8em;
+}
+
+.markdown-source-view.mod-cm6 .cm-scroller .HyperMD-quote .cm-quote {
+    color: white;
+}
