@@ -1,0 +1,9 @@
+body .table-view-table > thead > tr > th {
+    white-space: pre;
+}
+.table-view-table > tbody > tr > td {
+    word-wrap: normal;
+    word-break: normal;
+}
+
+/* via https://discord.com/channels/686053708261228577/702656734631821413/940691880801341502 */

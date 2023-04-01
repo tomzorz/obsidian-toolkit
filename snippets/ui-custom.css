@@ -1,0 +1,31 @@
+/* special icons for a few tree locations */
+
+.workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path^="00"] .nav-file-title-content::before {
+    content: '⚡ ';
+}
+
+.workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path^="07"] .nav-file-title-content::before {
+    content: '⚙ ';
+}
+
+.workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path^="08"] .nav-file-title-content::before {
+    content: '🧱 ';
+}
+
+.workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path^="09"] .nav-file-title-content::before {
+    content: '❓ ';
+}
+
+.workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path^="80"] .nav-file-title-content::before {
+    content: '💡 ';
+}
+
+.workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path^="81"] .nav-file-title-content::before {
+    content: '🧑 ';
+}
+
+.workspace-leaf-content[data-type="file-explorer"] .nav-file-title[data-path^="82"] .nav-file-title-content::before {
+    content: '📍 ';
+}
+
+/* testing grounds */

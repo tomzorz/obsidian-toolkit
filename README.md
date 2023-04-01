@@ -31,7 +31,7 @@ The following CSS snippets are intended to modify the basic obsidian theme. See 
 
 ![screenshot](./obsidian_looks.png)
 
-#### `ui.css`
+#### `ui-custom.css`
 
 Modifies the Obsidian UI in the following ways:
 

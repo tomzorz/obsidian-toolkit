@@ -120,32 +120,10 @@
 
 /* quotes */
 
-.markdown-preview-view blockquote {
-    box-shadow: 0 3.2px 7.2px 0 rgba(0,0,0,.132),0 .6px 1.8px 0 rgba(0,0,0,.108);
-    padding: 20px 30px;
-    color: white;
-    border: 2px solid var(--mica-border);
-    border-left: 4px solid var(--text-muted);
-    margin: 30px 0;
-    position: relative;
-    background: linear-gradient(175deg, transparent, rgba(255,255,255,0.05));
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 1.8em;
-    display: block;
+.markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote:before, .markdown-source-view.mod-cm6 .cm-blockquote-border:before {
+    border-left: 2px solid white;
 }
 
 .markdown-source-view.mod-cm6 .cm-scroller .HyperMD-quote {
-    padding: 20px 30px;
-    /* border: 2px solid var(--mica-border); */
-    border-left: 4px solid var(--text-muted);
-    margin: 30px 0;
-    position: relative;
-    /* background: linear-gradient(175deg, transparent, rgba(255,255,255,0.05)); */
-    background-color: rgba(255,255,255,0.05);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 1.8em;
-}
-
-.markdown-source-view.mod-cm6 .cm-scroller .HyperMD-quote .cm-quote {
-    color: white;
+    padding: 6px 0;
 }
